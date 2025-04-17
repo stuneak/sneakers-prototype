@@ -1,0 +1,25 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+
+.dark {
+	@mixin dark {
+		display: none;
+	}
+
+	@mixin light {
+		display: block;
+	}
+}
+
+.light {
+	@mixin light {
+		display: none;
+	}
+
+	@mixin dark {
+		display: block;
+	}
+}

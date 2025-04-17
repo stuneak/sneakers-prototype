@@ -1,0 +1,40 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"jest/globals": true
+	},
+	"extends": [
+		"plugin:react/recommended",
+		"plugin:jest/recommended",
+		"airbnb",
+		"prettier"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["react", "jest"],
+	"rules": {
+		"consistent-return": "off",
+		"camelcase": "off",
+		"jsx-a11y/no-static-element-interactions": "off",
+		"jsx-a11y/click-events-have-key-events": "off",
+		"react/jsx-no-constructed-context-values": "off",
+		"import/no-extraneous-dependencies": "off",
+		"react/prop-types": "off",
+		"no-self-compare": "off",
+		"no-bitwise": "off",
+		"react/jsx-props-no-spreading": "off",
+		"import/prefer-default-export": "off", // New rule added
+		"prefer-template": "off",
+		"no-param-reassign": "off",
+		"no-return-assign": "off",
+		"no-underscore-dangle": "off",
+		"no-plusplus": "off", // Disable no-plusplus rule globally
+		"import/extensions": "off" // Disable import/extensions globally
+	}
+}
